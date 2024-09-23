@@ -1,0 +1,50 @@
+header{
+    
+    background-color: #973131; 
+    display: flex;
+    justify-content: space-between;
+    align-Items: center;
+    padding: 10px 20px;
+    color: #FFF;
+    margin-bottom: 30px;
+  }
+
+.logo{
+    flex: 1; 
+    /* // Ocupa 1 parte do espaço (alinha à esquerda) */
+  };
+
+.searchBar {
+    /* // Ocupa 2 partes (centraliza a barra de pesquisa) */
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+.searchInput {
+    padding:  5px 10px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    width: 100%;
+    max-Width: 400px;
+  }
+
+.nav_Links {
+    flex: 1;   /* Ocupa 1 parte (alinha à direita) */
+    display: flex;
+    justify-content: flex-end;
+    /* gap: 20px; */
+  }
+
+
+.link{
+    color: #FFF; /*Cor dos links (branco)*/
+    text-Decoration: none;
+    font-Size: 16px;
+    position: relative;
+    padding: 5px 10px;
+  }
+
+.link:hover {
+    text-Decoration: underline;
+  }

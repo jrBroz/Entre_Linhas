@@ -1,0 +1,42 @@
+[
+  {
+    "imagem": "https://m.media-amazon.com/images/I/91r5G8RxqfL._AC_UF1000,1000_QL80_.jpg",
+    "titulo": "É Assim Que Acaba",
+    "autor": "Colleen Hoover",
+    "genero": "Romance",
+    "descricao": "É Assim Que Acaba conta a história de Lily, uma jovem que se mudou para Boston para cursar a faculdade e abrir a própria floricultura. Lá, ela conhece Ryle, um neurocirurgião teimoso e com aversão a relacionamentos.",
+    "data_publicacao": "2016-08-02"
+  },
+  {
+    "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyDXD5mAMS7bQ-UUDVGJNVQvqXY-TFjCpHZw&s",
+    "titulo": "É Assim Que Começa",
+    "autor": "Colleen Hoover",
+    "genero": "Romance",
+    "descricao": "Nesta história, Colleen Hoover nos apresenta a vida de Lily Bloom, vinda de um lar marcado por violência e dificuldades, Lily encontra uma nova esperança ao conhecer Ryle Kincaid, um neurocirurgião carismático e determinado.",
+    "data_publicacao": "2022-10-18"
+  },
+  {
+    "imagem": "https://www.meliuz.com.br/blog/wp-content/uploads/2023/10/biblioteca-da-meia-noite-705x1024.jpg",
+    "titulo": "Biblioteca da Meia-Noite",
+    "autor": "Matt Haig",
+    "genero": "Ficção científica",
+    "descricao": "traz nos a história de Nora Seed, uma adulta com depressão e pensamentos suicidas. Outrora esteve quase a ser campeã de natação, esteve numa banda e abandonou o possível amor da sua vida. Sente que a sua vida está sem cor e tem vontade de desistir.",
+    "data_publicacao": "2020-08-13"
+  },
+  {
+    "imagem": "https://www.meliuz.com.br/blog/wp-content/uploads/2023/10/o-poder-da-autorresponsabilidade-732x1024.jpg",
+    "titulo": "O Poder da Autorresponsabilidade ",
+    "autor": "Paulo Vieira",
+    "genero": "Autoajuda",
+    "descricao": "O poder da autorresponsabilidade é um livro escrito por Paulo Vieira, que tem como objetivo explicar a importância de assumir uma postura ativa e autorresponsável diante das situações da sua vida.",
+    "data_publicacao": "2018-01-25"
+  },
+  {
+    "imagem": "https://www.meliuz.com.br/blog/wp-content/uploads/2023/12/imperfeitos.jpg",
+    "titulo": "Imperfeitos",
+    "autor": "Christina Lauren",
+    "genero": "Comédia Romantica",
+    "descricao": "Será que Michael conseguirá encontrar um final feliz depois de ser rejeitado por Olivia? Uma comédia romântica surpreendente sobre como recomeços podem ser a cura para um coração partido.",
+    "data_publicacao": "2019-04-24"
+  }
+]
