@@ -1,7 +1,7 @@
-import { Carousel, Card} from "react-bootstrap";
+import { Carousel, Card, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
-import './cardSlider.css';
+import "./cardSlider.css";
 
 class CardSlider extends Component {
   constructor(props) {
@@ -13,7 +13,9 @@ class CardSlider extends Component {
   }
 
   componentDidMount() {
-    fetch("/livrosEmAlta.json")
+    fetch(
+      "https://www.googleapis.com/books/v1/volumes?q=subject:fiction&orderBy=newest"
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error("Erro ao carregar os dados dos livros.");
@@ -21,7 +23,17 @@ class CardSlider extends Component {
         return response.json();
       })
       .then((data) => {
-        this.setState({ livrosEmAlta: data });
+        const livros = data.items.map((livro) => ({
+          imagem: livro.volumeInfo.imageLinks
+            ? livro.volumeInfo.imageLinks.thumbnail
+            : "https://via.placeholder.com/128x193",
+          titulo: livro.volumeInfo.title,
+          autor: livro.volumeInfo.authors
+            ? livro.volumeInfo.authors.join(", ")
+            : "Autor desconhecido",
+        }));
+
+        this.setState({ livrosEmAlta: livros });
       })
       .catch((erro) => this.setState({ erro: erro.message }));
   }
@@ -34,7 +46,7 @@ class CardSlider extends Component {
     return (
       <Carousel interval={5000}>
         {this.state.livrosEmAlta.map((livroEmAlta, index) => (
-          <Carousel.Item key={livroEmAlta.index}>
+          <Carousel.Item key={livroEmAlta.titulo}>
             <div className="d-flex justify-content-center">
               <Card className="card-livro">
                 <div className="d-flex flex-column flex-md-row text-center">
@@ -46,9 +58,13 @@ class CardSlider extends Component {
                     />
                   </div>
                   <Card.Body className="d-flex flex-column justify-content-center">
-                    <Card.Title>{livroEmAlta.titulo}</Card.Title>
-                    <Card.Text>{livroEmAlta.autor}</Card.Text>
-                    <Card.Text>{livroEmAlta.descricao}</Card.Text>
+                    <Card.Title className="titulo">
+                      <h3>{livroEmAlta.titulo}</h3>
+                    </Card.Title>
+                    <Card.Text className="texto">{livroEmAlta.autor}</Card.Text>
+                    <Card.Text className="texto">
+                      <button className="button-card">Saiba mais</button>
+                    </Card.Text>
                   </Card.Body>
                 </div>
               </Card>
