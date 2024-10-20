@@ -1,0 +1,94 @@
+.formLogin {
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    height: 50%;
+    width: 25%;
+    margin: 0 auto;
+  
+    @media (max-width: 589px) {
+      flex-direction: column;
+    }
+  }
+  
+  #voltar{
+    color: #fff;
+  }
+
+  .login {
+    background-color: #973131;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .login_title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+#senha_esquecida{
+  color: #fff;
+}
+#senha_esquecida:hover{
+  color: lightblue;
+  transition: 0.2s;
+}
+
+#criar_Conta{
+
+  color: #f1f1f1
+}
+
+#criar_Conta:Hover{
+  color: lightblue;
+  transition: 0.2s;
+}
+
+  .btn {
+    color: #fff;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    padding: 15px 45px;
+    transition: 0.2s;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #f9d689;
+    color: #000;
+  }
+  
+  .form-input {
+    border-radius: 2px;
+    border: none;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 0 40px 0 10px;
+    width: 100%;
+    background: #f1f1f1;
+  }
+  
+  .remember {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .remember a {
+    margin-left: 10px;
+  }
+  
+  .login_button {
+    padding: 5px 10px;
+  }
+  
+  

@@ -1,0 +1,90 @@
+.formLogin {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  
+    @media (max-width: 589px) {
+      flex-direction: column;
+    }
+  }
+
+  #voltar{
+    color: #fff;
+  }
+  
+  .btn {
+    color: #fff;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    padding: 15px 45px;
+    transition: 0.2s;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #f9d689;
+    color: #000;
+  }
+  
+  .form-input {
+    border-radius: 2px;
+    border: none;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 0 40px 0 10px;
+    width: 100%;
+    background: #f1f1f1;
+  }
+  
+  .remember {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .remember a {
+    margin-left: 10px;
+  }
+  
+  .login_button {
+    padding: 5px 10px;
+  }
+  
+  .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    background-color: #973131;
+    color: white;
+    padding: 10px;
+  }
+  
+  .register form {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+  }
+  
+  .social_medias {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  .register_title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
