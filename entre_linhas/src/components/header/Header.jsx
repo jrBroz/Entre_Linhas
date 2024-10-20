@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./headerStyle.module.css";
-
+import { Link } from "react-router-dom";
 
 export default function Header(){
     return (
@@ -27,7 +27,7 @@ export default function Header(){
           <a href="/news"  className={styles.link}>News</a>
           <a href="/trending" className={styles.link}>Trending</a>
           <a href="/explorar" className={styles.link}>Explorar</a>
-          <a href="/login" className={styles.link}>Login/Cadastrar</a>
+          <Link to="/Login" className={styles.link}>Login/Cadastrar</Link>
         </div>
       </header>
     );
